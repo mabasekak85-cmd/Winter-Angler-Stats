@@ -1,68 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Marketing |Ice Fishing Stats Tracker</title>
-<style>
-body{
-    margin:0;
-    font-family:'Segoe UI',sans-serif;
-    background:linear-gradient(135deg,#0f2027,#2c5364);
-    color:#f0fbff;
-    padding:20px;
-}
-.container{
-    max-width:850px;
-    margin:auto;
-}
-.panel{
-    background:rgba(255,255,255,0.08);
-    padding:25px;
-    border-radius:18px;
-    box-shadow:0 10px 30px rgba(0,0,0,0.4);
-}
-h1{margin-bottom:20px;}
-a{color:#7fe3ff;}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Marketing and project information for Ice Fishing Stats Tracker by Bedsted Dev." />
+  <title>Marketing | Ice Fishing Stats Tracker</title>
+  <style>
+    :root{--deep:#04101f;--panel:rgba(255,255,255,.08);--line:rgba(255,255,255,.22);--text:#effcff;--muted:#bfdce7;--aqua:#61efff;--green:#9cffcb;--sun:#ffe08a}*{box-sizing:border-box}body{margin:0;min-height:100vh;color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:radial-gradient(circle at 20% 18%,rgba(97,239,255,.28),transparent 30%),radial-gradient(circle at 84% 72%,rgba(156,255,203,.15),transparent 28%),linear-gradient(145deg,#030b17,#092b45 50%,#03101f);overflow-x:hidden}.shell{width:min(1120px,calc(100% - 32px));margin:0 auto}.nav{position:sticky;top:0;z-index:10;background:rgba(3,10,20,.74);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}.nav-inner{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:14px 0}.brand{display:flex;align-items:center;gap:10px;color:white;text-decoration:none;font-weight:850;letter-spacing:-.03em}.logo{width:42px;height:42px;border-radius:14px;display:grid;place-items:center;color:#04101f;background:linear-gradient(135deg,#65efff,#fff);box-shadow:0 0 32px rgba(94,238,255,.3)}.links{display:flex;flex-wrap:wrap;gap:8px;justify-content:flex-end}.links a{color:var(--muted);text-decoration:none;padding:10px 12px;border-radius:999px;font-weight:700;font-size:14px;border:1px solid transparent}.links a:hover,.links a.active{color:white;border-color:var(--line);background:rgba(255,255,255,.08)}.hero{padding:64px 0 34px}.grid{display:grid;grid-template-columns:1.05fr .95fr;gap:24px;align-items:stretch}.panel{border:1px solid var(--line);background:rgba(255,255,255,.075);border-radius:36px;padding:clamp(24px,5vw,48px);box-shadow:0 24px 80px rgba(0,0,0,.28);overflow:hidden}.eyebrow{display:inline-flex;padding:8px 12px;border-radius:999px;border:1px solid var(--line);background:rgba(255,255,255,.08);font-weight:800}h1{font-size:clamp(38px,7vw,74px);line-height:.96;letter-spacing:-.065em;margin:18px 0}h2,h3{letter-spacing:-.035em}p,li{color:var(--muted);line-height:1.75;font-size:16px}.button{display:inline-flex;align-items:center;gap:10px;padding:14px 18px;border-radius:18px;background:linear-gradient(135deg,#65efff,#fff);color:#04101f;text-decoration:none;font-weight:900;margin-top:12px;box-shadow:0 0 34px rgba(85,234,255,.22)}.value-map{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:18px}.value{padding:18px;border-radius:24px;background:rgba(3,18,34,.66);border:1px solid var(--line);transition:transform .2s ease}.value:hover{transform:translateY(-4px)}.timeline{display:grid;gap:14px;margin-top:18px}.item{position:relative;padding:18px 18px 18px 52px;border-radius:24px;background:rgba(3,18,34,.66);border:1px solid var(--line)}.item:before{content:"";position:absolute;left:18px;top:22px;width:16px;height:16px;border-radius:50%;background:var(--aqua);box-shadow:0 0 22px rgba(97,239,255,.48)}.status{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}.pill{padding:10px 12px;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid var(--line);font-weight:800;color:white}.footer{text-align:center;color:var(--muted);padding:28px 0 42px}@media(max-width:850px){.nav-inner{align-items:flex-start;flex-direction:column}.links{justify-content:flex-start}.grid,.value-map{grid-template-columns:1fr}}@media(max-width:520px){.shell{width:min(100% - 22px,1120px)}.panel{border-radius:28px}.pill{width:100%;justify-content:center;text-align:center}}
+  </style>
 </head>
 <body>
+  <nav class="nav">
+    <div class="shell nav-inner">
+      <a class="brand" href="index.html"><span class="logo">❄</span><span>Bedsted Dev</span></a>
+      <div class="links"><a href="index.html">Home</a><a href="privacy-policy.html">Privacy Policy</a><a href="support.html">Support</a><a class="active" href="marketing.html">Marketing</a></div>
+    </div>
+  </nav>
 
-<div class="container">
-<div class="panel">
+  <main class="shell hero">
+    <section class="grid">
+      <article class="panel">
+        <span class="eyebrow">Marketing URL</span>
+        <h1>Built with focus, learning, and long-term value.</h1>
+        <p>Ice Fishing Stats Tracker is developed by Bedsted Dev, an early-stage independent developer account. The goal is to create a useful, honest, and practical tool for people who enjoy ice fishing and want a simple way to track their fishing activity.</p>
+        <p>The project is still growing. At the current stage, the app does not include paid features or subscriptions. In the future, paid functionality or subscriptions may be introduced to support continued development, maintenance, and improvement of the app.</p>
+        <a class="button" href="support.html">Share feedback</a>
+      </article>
+      <aside class="panel">
+        <h2>Current Monetization Status</h2>
+        <div class="status">
+          <span class="pill">No paid features now</span>
+          <span class="pill">No subscriptions now</span>
+          <span class="pill">Future revenue features planned</span>
+          <span class="pill">User value first</span>
+        </div>
+        <p style="margin-top:22px;">Any future paid features will be presented transparently so users understand what is free, what is paid, and why those options exist.</p>
+      </aside>
+    </section>
 
-<h1>Marketing Information</h1>
+    <section class="panel" style="margin-top:22px;">
+      <h2>What the App Aims to Provide</h2>
+      <div class="value-map">
+        <div class="value"><h3>🎣 Practical tracking</h3><p>Help users keep notes and statistics from ice fishing sessions in a clear and organized way.</p></div>
+        <div class="value"><h3>📈 Better personal insight</h3><p>Support users in understanding their own fishing activity over time through simple records.</p></div>
+        <div class="value"><h3>🧊 Focused experience</h3><p>Keep the app focused on one clear purpose instead of adding unnecessary complexity.</p></div>
+        <div class="value"><h3>🔐 Transparent approach</h3><p>Provide clear support, privacy, and developer information for both users and reviewers.</p></div>
+      </div>
+    </section>
 
-<p>
-Winter Angler Stats is developed by Bedsted Dev — an independent beginner developer passionate about building practical and meaningful applications.
-</p>
+    <section class="panel" style="margin-top:22px;">
+      <h2>Development Roadmap</h2>
+      <div class="timeline">
+        <div class="item"><strong>Current stage:</strong> Build a reliable, simple app foundation for tracking ice fishing activity.</div>
+        <div class="item"><strong>Next improvements:</strong> Improve usability, polish the interface, and respond to user feedback.</div>
+        <div class="item"><strong>Future plan:</strong> Consider optional paid features or subscriptions only after there is clear value for users.</div>
+      </div>
+    </section>
+  </main>
 
-<h3>Current Status</h3>
-<p>
-At the moment, the app does not include paid features, subscriptions, or in-app purchases.
-It is completely free to use.
-</p>
+  <footer class="footer shell">© 2026 Bedsted Dev. Ice Fishing Stats Tracker.</footer>
 
-<h3>Future Plans</h3>
-<p>
-In the future, premium features or subscription options may be introduced to support further development
-and ensure continuous improvement of the app.
-</p>
-
-<h3>Value & Mission</h3>
-<p>
-The goal is to create a reliable, useful, and transparent product for winter fishing enthusiasts.
-Every update aims to improve usability, performance, and real-world value.
-</p>
-
-<p>
-As a growing developer, I am committed to transparency, fairness, and long-term improvement.
-</p>
-
-<p><a href="index.html">Back to Home</a></p>
-
-</div>
-</div>
-
+  <script>
+    const values = document.querySelectorAll('.value');
+    values.forEach((card) => {
+      card.addEventListener('pointermove', (event) => {
+        const rect = card.getBoundingClientRect();
+        const x = ((event.clientX - rect.left) / rect.width - .5) * 8;
+        const y = ((event.clientY - rect.top) / rect.height - .5) * -8;
+        card.style.transform = `perspective(600px) rotateY(${x}deg) rotateX(${y}deg) translateY(-4px)`;
+      });
+      card.addEventListener('pointerleave', () => card.style.transform = '');
+    });
+  </script>
 </body>
 </html>
