@@ -73,7 +73,7 @@
     .links a:hover, .links a.active { color: white; border-color: var(--line); background: rgba(255,255,255,.08); }
 
     .hero { padding: 74px 0 36px; position: relative; }
-    .hero-grid { display: grid; grid-template-columns: 1.08fr .92fr; gap: 34px; align-items: center; }
+    .hero-grid { display: grid; grid-template-columns: 1fr; max-width: 900px; gap: 34px; align-items: center; }
     .badge {
       width: fit-content; display: flex; align-items: center; gap: 8px;
       color: var(--ice); background: rgba(255,255,255,.08); border: 1px solid var(--line);
@@ -90,34 +90,9 @@
     .button.primary { color: #041124; background: linear-gradient(135deg, #65efff, #ffffff); box-shadow: var(--glow); }
     .button:hover { transform: translateY(-3px); background: rgba(255,255,255,.15); }
 
-    .phone-card {
-      position: relative; min-height: 510px; border-radius: 40px; padding: 18px;
-      border: 1px solid rgba(255,255,255,.28);
-      background: linear-gradient(160deg, rgba(255,255,255,.18), rgba(255,255,255,.04));
-      box-shadow: 0 24px 80px rgba(0,0,0,.35);
-      overflow: hidden;
-    }
-    .phone-card::after {
-      content: ""; position: absolute; width: 260px; height: 260px; right: -80px; bottom: -70px;
-      background: radial-gradient(circle, rgba(57,212,232,.42), transparent 66%);
-    }
-    .screen {
-      position: relative; z-index: 2; height: 100%; min-height: 474px; border-radius: 30px; padding: 24px;
-      background: rgba(2, 17, 33, .72); border: 1px solid var(--line);
-      display: flex; flex-direction: column; justify-content: space-between;
-    }
-    .metric { display: flex; justify-content: space-between; gap: 12px; padding: 16px; margin: 12px 0; border-radius: 20px; background: rgba(255,255,255,.08); border: 1px solid var(--line); }
-    .metric strong { font-size: 30px; }
-    .ice-hole {
-      width: 190px; height: 190px; margin: 16px auto;
-      border-radius: 50%; background: radial-gradient(circle, #001321 0 34%, #52e2f4 35% 41%, rgba(255,255,255,.62) 42% 45%, rgba(255,255,255,.12) 46% 100%);
-      box-shadow: inset 0 -22px 40px rgba(0,0,0,.45), 0 0 42px rgba(57,212,232,.25);
-      animation: breathe 3.2s ease-in-out infinite;
-    }
-    @keyframes breathe { 0%,100% { transform: scale(1); } 50% { transform: scale(1.035); } }
-
     .section { padding: 42px 0; }
     .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .wide-card { margin-top: 18px; }
     .card {
       padding: 24px; border-radius: 28px; background: var(--card); border: 1px solid var(--line);
       box-shadow: 0 18px 48px rgba(0,0,0,.22); backdrop-filter: blur(12px);
@@ -130,20 +105,16 @@
     @media (max-width: 850px) {
       .nav-inner { align-items: flex-start; flex-direction: column; }
       .links { justify-content: flex-start; }
-      .hero { padding-top: 42px; }
-      .hero-grid, .cards { grid-template-columns: 1fr; }
-      .phone-card { min-height: auto; }
+      .hero { padding-top: 42px; padding-bottom: 20px; }
+      .cards { grid-template-columns: 1fr; }
     }
     @media (max-width: 520px) {
       .shell { width: min(100% - 22px, 1120px); }
       .links a { padding: 9px 10px; font-size: 13px; }
       .cta-row { flex-direction: column; }
       .button { text-align: center; }
-      .screen { padding: 18px; }
-      .ice-hole { width: 150px; height: 150px; }
     }
 
-    /* Mobile navigation: compact glass dock */
     @media (max-width: 760px) {
       body { padding-bottom: 92px; }
       .nav { z-index: 50; }
@@ -161,10 +132,6 @@
       .links a.active::before { filter: none; }
     }
     @media (max-width: 380px) { .links { left: 7px; right: 7px; bottom: 7px; padding: 6px; gap: 4px; } .links a { font-size: 9.5px; padding: 8px 2px; } .links a::before { font-size: 16px; } }
-
-    /* Home page: clean official landing page without app concept mockup */
-    .hero-grid { grid-template-columns: 1fr; max-width: 900px; }
-    .hero { padding-bottom: 20px; }
   </style>
 </head>
 <body>
@@ -189,7 +156,10 @@
         <div>
           <div class="badge">🧊 Official app information page</div>
           <h1>Ice Fishing Stats Tracker</h1>
-          <p class="lead">A simple and transparent app project by Bedsted Dev, created to help ice fishing enthusiasts keep their catches, sessions, and fishing notes organized in one clear place.</p>
+          <p class="lead">
+            A simple and transparent app project by Bedsted Dev, created to help ice fishing enthusiasts keep their catches,
+            sessions, and fishing notes organized in one clear place.
+          </p>
           <div class="cta-row">
             <a class="button primary" href="privacy-policy.html">Read Privacy Policy</a>
             <a class="button" href="support.html">Contact Support</a>
@@ -216,6 +186,22 @@
           <p>This website is provided so Google Play reviewers and users can clearly understand who develops the app, how support works, and how privacy is handled.</p>
         </article>
       </div>
+
+      <article class="card wide-card">
+        <h2>Privacy and analytics transparency</h2>
+        <p>
+          Ice Fishing Stats Tracker may use Firebase Analytics and AppsFlyer to process limited usage data, app activity,
+          device identifiers, advertising identifiers, approximate location, app version, device type, and diagnostic information.
+        </p>
+        <p>
+          This data may be used for analytics, attribution, app improvement, marketing measurement, fraud prevention, security,
+          and compliance. Data is transmitted using secure protocols such as HTTPS/TLS.
+        </p>
+        <p>
+          The app does not currently provide a direct in-app mechanism or separate request process for users to request deletion
+          of analytics, attribution, or device identifier data. For full details, please review the Privacy Policy.
+        </p>
+      </article>
     </section>
   </main>
 
