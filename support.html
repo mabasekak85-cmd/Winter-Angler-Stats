@@ -8,7 +8,7 @@
   <style>
     :root { --deep:#04101f; --panel:rgba(255,255,255,.08); --line:rgba(255,255,255,.22); --text:#effcff; --muted:#bdd9e6; --aqua:#55eaff; --warm:#ffd166; }
     *{box-sizing:border-box} body{margin:0;min-height:100vh;color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:linear-gradient(145deg,#03101f,#08314f 50%,#061222);overflow-x:hidden}.shell{width:min(1040px,calc(100% - 32px));margin:0 auto}.nav{position:sticky;top:0;z-index:10;background:rgba(3,10,20,.74);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}.nav-inner{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:14px 0}.brand{display:flex;align-items:center;gap:10px;color:white;text-decoration:none;font-weight:850;letter-spacing:-.03em}.logo{width:42px;height:42px;border-radius:14px;display:grid;place-items:center;color:#04101f;background:linear-gradient(135deg,#65efff,#fff);box-shadow:0 0 32px rgba(94,238,255,.3)}.links{display:flex;flex-wrap:wrap;gap:8px;justify-content:flex-end}.links a{color:var(--muted);text-decoration:none;padding:10px 12px;border-radius:999px;font-weight:700;font-size:14px;border:1px solid transparent}.links a:hover,.links a.active{color:white;border-color:var(--line);background:rgba(255,255,255,.08)}
-    .hero{padding:64px 0 26px}.panel{position:relative;border:1px solid var(--line);background:rgba(255,255,255,.075);border-radius:36px;padding:clamp(24px,5vw,50px);box-shadow:0 24px 80px rgba(0,0,0,.28);overflow:hidden}.panel:before{content:"?";position:absolute;right:24px;top:-28px;font-size:180px;font-weight:900;color:rgba(255,255,255,.06);line-height:1}.eyebrow{display:inline-flex;padding:8px 12px;border-radius:999px;border:1px solid var(--line);background:rgba(255,255,255,.08);font-weight:800}h1{font-size:clamp(38px,7vw,70px);line-height:.96;letter-spacing:-.06em;margin:18px 0}p{color:var(--muted);line-height:1.75;font-size:16px}.support-card{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:28px}.card{padding:24px;border-radius:26px;background:rgba(3,18,34,.65);border:1px solid var(--line)}.card h2,.card h3{margin-top:0;letter-spacing:-.03em}.email-button{display:inline-flex;align-items:center;gap:10px;padding:14px 18px;border-radius:18px;background:linear-gradient(135deg,#65efff,#fff);color:#04101f;text-decoration:none;font-weight:900;margin-top:8px;box-shadow:0 0 34px rgba(85,234,255,.22)}.steps{counter-reset:step;display:grid;gap:12px;margin-top:18px}.step{counter-increment:step;padding:18px;border-radius:22px;border:1px solid var(--line);background:rgba(255,255,255,.07);position:relative}.step:before{content:counter(step);display:inline-grid;place-items:center;width:30px;height:30px;border-radius:50%;background:rgba(85,234,255,.18);border:1px solid rgba(85,234,255,.45);margin-right:10px;font-weight:900}.footer{text-align:center;color:var(--muted);padding:28px 0 42px}@media(max-width:780px){.nav-inner{align-items:flex-start;flex-direction:column}.links{justify-content:flex-start}.support-card{grid-template-columns:1fr}.panel:before{font-size:120px;right:8px}}
+    .hero{padding:64px 0 26px}.panel{position:relative;border:1px solid var(--line);background:rgba(255,255,255,.075);border-radius:36px;padding:clamp(24px,5vw,50px);box-shadow:0 24px 80px rgba(0,0,0,.28);overflow:hidden}.panel:before{content:"?";position:absolute;right:24px;top:-28px;font-size:180px;font-weight:900;color:rgba(255,255,255,.06);line-height:1}.eyebrow{display:inline-flex;padding:8px 12px;border-radius:999px;border:1px solid var(--line);background:rgba(255,255,255,.08);font-weight:800}h1{font-size:clamp(38px,7vw,70px);line-height:.96;letter-spacing:-.06em;margin:18px 0}p{color:var(--muted);line-height:1.75;font-size:16px}.support-card{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:28px}.card{padding:24px;border-radius:26px;background:rgba(3,18,34,.65);border:1px solid var(--line)}.card h2,.card h3{margin-top:0;letter-spacing:-.03em}.email-button{display:inline-flex;align-items:center;gap:10px;padding:14px 18px;border-radius:18px;background:linear-gradient(135deg,#65efff,#fff);color:#04101f;text-decoration:none;font-weight:900;margin-top:8px;box-shadow:0 0 34px rgba(85,234,255,.22)}.steps{counter-reset:step;display:grid;gap:12px;margin-top:18px}.step{counter-increment:step;padding:18px;border-radius:22px;border:1px solid var(--line);background:rgba(255,255,255,.07);position:relative;color:var(--muted);line-height:1.7}.step:before{content:counter(step);display:inline-grid;place-items:center;width:30px;height:30px;border-radius:50%;background:rgba(85,234,255,.18);border:1px solid rgba(85,234,255,.45);margin-right:10px;font-weight:900;color:white}.notice{margin-top:20px;padding:22px;border-radius:24px;background:rgba(85,234,255,.10);border:1px solid rgba(85,234,255,.35);color:var(--muted);line-height:1.75}.notice strong{color:white}.footer{text-align:center;color:var(--muted);padding:28px 0 42px}@media(max-width:780px){.nav-inner{align-items:flex-start;flex-direction:column}.links{justify-content:flex-start}.support-card{grid-template-columns:1fr}.panel:before{font-size:120px;right:8px}}
 
     /* Mobile navigation: compact glass dock */
     @media (max-width: 760px) {
@@ -66,6 +66,25 @@
         <div class="step">Mention the app version if it is visible in Google Play or inside the app.</div>
         <div class="step">Do not send sensitive personal information unless it is absolutely necessary for the support request.</div>
       </div>
+    </section>
+
+    <section class="panel" style="margin-top:20px;">
+      <h2>Privacy and Data Questions</h2>
+      <div class="notice">
+        <strong>Support scope notice.</strong>
+        This support contact is available for general questions, app issues, technical support, feedback, and questions related
+        to the Privacy Policy. However, Ice Fishing Stats Tracker does not currently provide a direct in-app mechanism or separate
+        request process for users to request deletion of analytics, attribution, or device identifier data.
+      </div>
+      <p>
+        Ice Fishing Stats Tracker may use Firebase Analytics and AppsFlyer for analytics, attribution, app improvement,
+        fraud prevention, security, compliance, and marketing measurement. These services may process limited usage data,
+        app activity, device identifiers, advertising identifiers, approximate location, app version, device type, and diagnostic
+        information as described in the Privacy Policy.
+      </p>
+      <p>
+        For full details, please review the <a href="privacy-policy.html">Privacy Policy</a>.
+      </p>
     </section>
   </main>
 
